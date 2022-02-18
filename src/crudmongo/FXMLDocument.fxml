@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="crudmongo.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tbPet" layoutX="49.0" layoutY="176.0" prefHeight="200.0">
+        <columns>
+          <TableColumn fx:id="clName" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="clType" prefWidth="75.0" text="Tipo" />
+            <TableColumn fx:id="clBreed" prefWidth="75.0" text="Raza" />
+            <TableColumn fx:id="clAge" prefWidth="75.0" text="Edad" />
+            <TableColumn fx:id="clActions" minWidth="200.0" prefWidth="75.0" text="Acciones" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtName" layoutX="33.0" layoutY="70.0" promptText="Nombre" />
+      <ComboBox fx:id="txtType" layoutX="225.0" layoutY="70.0" prefWidth="150.0" />
+      <TextField fx:id="txtBreed" layoutX="390.0" layoutY="70.0" promptText="Raza" />
+      <TextField fx:id="txtAge" layoutX="33.0" layoutY="116.0" promptText="Edad" />
+      <Button fx:id="btnAdd" layoutX="260.0" layoutY="116.0" mnemonicParsing="false" text="Guardar" />
+      <Label layoutX="225.0" layoutY="48.0" text="Tipo:" />
+   </children>
+</AnchorPane>

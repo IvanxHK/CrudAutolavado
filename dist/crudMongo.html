@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'crudMongo.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJjcnVkTW9uZ28uam5scCI+CiAgPGluZm9ybWF0aW9uPgogICAgPHRpdGxlPmNydWRNb25nbzwvdGl0bGU+CiAgICA8dmVuZG9yPmthc3Bhcm92PC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9ImNydWRNb25nby5qYXIiIHNpemU9IjEyMjE1IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4wLmphciIgc2l6ZT0iMjMxOTUyIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4yLWphdmFkb2MuamFyIiBzaXplPSIyNjM0NDAiIGRvd25sb2FkPSJlYWdlciIgLz4KICAgIDxqYXIgaHJlZj0ibGliL2dzb24tMi44LjItc291cmNlcy5qYXIiIHNpemU9IjE0Nzg1NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvbW9uZ28tamF2YS1kcml2ZXItMi45LjMuamFyIiBzaXplPSIzODg1NDAiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY3J1ZG1vbmdvLkNydWRNb25nbyIgIG5hbWU9ImNydWRNb25nbyIgLz4KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedcrudmongo() {
+        dtjava.embed(
+            {
+                id : 'crudmongo',
+                url : 'crudMongo.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJjcnVkTW9uZ28uam5scCI+CiAgPGluZm9ybWF0aW9uPgogICAgPHRpdGxlPmNydWRNb25nbzwvdGl0bGU+CiAgICA8dmVuZG9yPmthc3Bhcm92PC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9ImNydWRNb25nby5qYXIiIHNpemU9IjEyMjE1IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4wLmphciIgc2l6ZT0iMjMxOTUyIiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9nc29uLTIuOC4yLWphdmFkb2MuamFyIiBzaXplPSIyNjM0NDAiIGRvd25sb2FkPSJlYWdlciIgLz4KICAgIDxqYXIgaHJlZj0ibGliL2dzb24tMi44LjItc291cmNlcy5qYXIiIHNpemU9IjE0Nzg1NSIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvbW9uZ28tamF2YS1kcml2ZXItMi45LjMuamFyIiBzaXplPSIzODg1NDAiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0iY3J1ZG1vbmdvLkNydWRNb25nbyIgIG5hbWU9ImNydWRNb25nbyIgLz4KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4KPC9qbmxwPgo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedcrudmongo);
+</script>
+
+</head><body>
+<h2>Test page for <b>crudMongo</b></h2>
+  <b>Webstart:</b> <a href='crudMongo.jnlp' onclick="return launchApplication('crudMongo.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

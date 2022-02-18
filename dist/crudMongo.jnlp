@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="crudMongo.jnlp">
+  <information>
+    <title>crudMongo</title>
+    <vendor>kasparov</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="crudMongo.jar" size="12215" download="eager" />
+    <jar href="lib/gson-2.8.0.jar" size="231952" download="eager" />
+    <jar href="lib/gson-2.8.2-javadoc.jar" size="263440" download="eager" />
+    <jar href="lib/gson-2.8.2-sources.jar" size="147855" download="eager" />
+    <jar href="lib/mongo-java-driver-2.9.3.jar" size="388540" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="crudmongo.CrudMongo"  name="crudMongo" />
+  <update check="always"/>
+</jnlp>
